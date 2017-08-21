@@ -16,18 +16,21 @@ using System.Windows.Shapes;
 namespace PaintWPF
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для PColor.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PColor : UserControl
     {
-        public MainWindow()
+        public PColor()
         {
             InitializeComponent();
-            XData data = new XData();
-            pDraw1.data = data;
-            pColor1.data = data;
-            pWidth1.data = data;
         }
 
+        public XData data = null;
+
+        private void SetColor(object sender, RoutedEventArgs e)
+        {
+            Button bt = sender as Button;
+            data.color = bt.Background;
+        }
     }
 }

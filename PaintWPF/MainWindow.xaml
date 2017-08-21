@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PaintWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="Paint" Height="377" Width="525.25">
+    <Grid Background="#FF2E545F">
+        <local:PDraw x:Name="pDraw1" HorizontalAlignment="Left" Width="409"/>
+        <local:PColor x:Name="pColor1" HorizontalAlignment="Left" Height="62" Margin="435,48,0,0" VerticalAlignment="Top" Width="52"/>
+        <local:PWidth x:Name="pWidth1" HorizontalAlignment="Left" Height="100" Margin="425,136,-8,0" VerticalAlignment="Top" Width="100"/>
+
     </Grid>
 </Window>
